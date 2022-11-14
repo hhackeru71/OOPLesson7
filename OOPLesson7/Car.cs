@@ -14,7 +14,7 @@ namespace OOPLesson7
             return "sdfsd";
         }
 
-        public int GetType()
+        public  int GetType()
         {
             return 1;
         }
