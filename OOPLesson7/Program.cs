@@ -1,4 +1,5 @@
 ﻿using OOPLesson7;
+using OOPLesson7.Interface;
 using OOPLesson7.Task;
 using System;
 
@@ -8,6 +9,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            Pig pig = new Pig();
+            pig.animalSound();
+
             //Person person1 = new Person("yarin");//error compiler
             //Person person2 = new Students(30, "yarin");//good
             //Console.WriteLine(person2.GetString());
