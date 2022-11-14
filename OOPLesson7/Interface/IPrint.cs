@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOPLesson7.Interface
 {
-     interface IAnimal
+    internal interface IPrint
     {
-        void animalSound();//הצהרה
-
-        //string GetArea();
+        string GetPrint();
     }
-
 }

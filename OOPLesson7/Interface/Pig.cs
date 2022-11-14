@@ -13,6 +13,11 @@ namespace OOPLesson7.Interface
         {
             Console.WriteLine("hello pig");
         }
+
+        //public string GetArea()
+        //{
+            
+        //}
     }
 
    

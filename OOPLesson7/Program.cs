@@ -9,16 +9,37 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Pig pig = new Pig();
-            pig.animalSound();
+            Car car = new Car();
+            Console.WriteLine(car.GetPrint());
+            Console.WriteLine(car.GetType());
 
-            //Person person1 = new Person("yarin");//error compiler
-            //Person person2 = new Students(30, "yarin");//good
-            //Console.WriteLine(person2.GetString());
-            Shape circle = new Circle(2.6);
-            Console.WriteLine(circle.GetArea());
-            Shape line = new Line(3.5);
-            Console.WriteLine(line.GetArea());
+            //Test test = new Test();
+            //Console.WriteLine(test.GetArea());
+            //Console.WriteLine(test.Get());
+            //ליצור interface  print
+            ////פונקציה שמחזירה print כstring // הצהרה
+
+            //ליצור  interface type
+            // פונקציה מחזירה את int GetType
+
+            //מחלקה car יורשת מתוך interface print וגם יורשת מ type
+            //להחזיר את המספר  1 בפונקציה GetType
+            //להחזיר בפונקציה איזה מחרוזת 
+            //main
+
+            //להדפיס את פונקציה print
+
+
+            //Pig pig = new Pig();
+            //pig.animalSound();
+
+            ////Person person1 = new Person("yarin");//error compiler
+            ////Person person2 = new Students(30, "yarin");//good
+            ////Console.WriteLine(person2.GetString());
+            //Shape circle = new Circle(2.6);
+            //Console.WriteLine(circle.GetArea());
+            //Shape line = new Line(3.5);
+            //Console.WriteLine(line.GetArea());
             //להדפיס את GetArea
             //shape c = new Line();
 
@@ -51,6 +72,30 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //להדפיס את GetArea
 
 
+        }
+
+
+    }
+
+    interface ITest2
+    {
+        public string Get();
+    }
+    interface ITest
+    {
+        public int GetArea();
+    }
+
+    class Test : ITest, ITest2
+    {
+        public string Get()
+        {
+            return "sdf";
+        }
+
+        public int GetArea()
+        {
+            return 1;
         }
     }
 }
